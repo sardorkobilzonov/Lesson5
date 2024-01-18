@@ -1,0 +1,657 @@
+:root {
+  --main-text-color: #1a3555;
+  --link-hover-color: #004c92;
+  --white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.without-background-link {
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  border: 2px solid #1482e8;
+  text-align: center;
+}
+
+.with-background-link {
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 40px;
+  text-align: center;
+  background-image: linear-gradient(94deg, #1482e8 5.35%, #28c6dc 94.46%);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.04),
+    0px 2px 6px 0px rgba(0, 167, 204, 0.12),
+    0px 16px 24px 0px rgba(0, 167, 204, 0.2);
+}
+
+.without-background-link:hover,
+.with-background-link:hover {
+  opacity: 0.7;
+}
+
+/* header */
+
+.header {
+  padding: 13px 0 30px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 3px;
+  border: 1px solid transparent;
+}
+
+.logo:focus {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.header__nav {
+  max-width: 500px;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav__link,
+.header__registration {
+  color: #5c5d5f;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20.16px;
+}
+
+.header__nav__link:focus,
+.header__registration:focus {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.header__nav__link:hover {
+  font-weight: 500;
+  color: var(--link-hover-color);
+}
+
+.header__right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__right > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 20.16px;
+  margin-right: 20px;
+}
+
+.header__tel {
+  color: #000;
+}
+
+.header__login {
+  color: #004c92;
+  text-align: center;
+  font-weight: 600;
+  line-height: 20.16px;
+}
+
+.header__registration {
+  color: var(--white);
+  text-align: center;
+  font-weight: 600;
+  line-height: 20.16px;
+}
+
+.header__login:hover,
+.header__registration:hover {
+  opacity: 0.7;
+}
+
+.header__login:focus,
+.header__registration:focus {
+  border: 1px solid gray;
+}
+
+/* /header */
+
+/* hero */
+
+.hero {
+  background-image: url(../images/hero-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__container {
+  padding-top: 274px;
+  padding-bottom: 42px;
+}
+
+.hero__title {
+  width: 755px;
+  color: var(--white);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  margin-bottom: 32px;
+}
+
+.hero__text {
+  width: 345px;
+  color: var(--white);
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: -0.48px;
+  padding-left: 20px;
+  border-left: 2px solid #00a2ed;
+  margin-bottom: 17px;
+}
+
+.hero__buy,
+.hero__profit {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 20.16px;
+  padding: 14px 32px;
+  margin-bottom: 11.5px;
+}
+
+.hero__buy {
+  padding: 16px 32px;
+}
+
+.hero__profit {
+  border: 2px solid #fff;
+  opacity: 0.7;
+  margin-left: 17px;
+}
+
+.hero__sircles {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+}
+
+.hero__sircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  display: inline-block;
+}
+
+.hero__sircle-active {
+  background-color: #fff;
+}
+
+/* /hero */
+
+/* tasks */
+
+.tasks {
+  background-color: #eff8fd;
+  margin-bottom: 38px;
+}
+
+.tasks__container {
+  display: flex;
+  align-items: center;
+  gap: 173px;
+}
+
+.tasks__title {
+  width: 378px;
+  color: var(--main-text-color);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  letter-spacing: -0.64px;
+  margin-bottom: 32px;
+}
+
+.tasks__text {
+  width: 378px;
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: -0.32px;
+  margin-bottom: 32px;
+}
+
+.tasks__link {
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20.16px;
+}
+
+/* /tasks */
+
+/* benefit */
+
+.benefit {
+  margin-bottom: 57px;
+}
+
+.benefit__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.benefit__title {
+  color: var(--main-text-color);
+  width: 378px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  letter-spacing: -0.64px;
+  margin-bottom: 32px;
+}
+
+.benefit__text {
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: -0.32px;
+}
+
+.benefit__center {
+  position: relative;
+}
+
+.benefit__list {
+  width: 276.982px;
+  flex-shrink: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.benefit__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #e33030;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17.28px;
+}
+
+.benefit__item-first {
+  width: 100%;
+}
+
+.benefit__item-second,
+.benefit__item-third {
+  gap: 17px;
+}
+
+.benefit__item-second img,
+.benefit__item-third img {
+  order: -1;
+}
+
+.benefit__center__text {
+  color: var(--main-text-color);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20.16px;
+  text-align: center;
+}
+
+.benefit__center__price {
+  width: 110.982px;
+  background-image: url(../images/benefit-cost-bg-1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffefef;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20.16px;
+  padding: 11px 16px;
+  border: 2px solid #000;
+  position: absolute;
+  top: 25%;
+  left: 65%;
+}
+
+.benefit__right {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20.16px;
+}
+
+.benefit__right__text {
+  color: var(--main-text-color);
+}
+
+.benefit__right__price {
+  width: 110.982px;
+  background-image: url(../images/benefit-cost-bg-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffefef;
+  padding: 11px 16px;
+  border: 2px solid #000;
+  position: absolute;
+  top: 55%;
+  left: 45%;
+}
+
+.intro__section {
+  width: 596px;
+  height: 753px;
+  background-color: #eff8fd;
+}
+
+.intro__register {
+  /* // Регистрация */
+  padding-top: 67px;
+  padding-left: 130px;
+  padding-bottom: 40px;
+  color: #1a3555;
+  font-size: 24px;
+  font-family: Gilroy;
+  font-weight: 600;
+  line-height: 28.8px;
+  word-wrap: break-word;
+}
+
+.email {
+  /* // E-mail */
+  margin-left: 149px;
+  margin-top: 70px;
+  color: #1a3555;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.16px;
+  word-wrap: break-word;
+}
+
+.e-email {
+  margin-left: 113px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: 340.88px;
+  height: 38.09px;
+  border-radius: 20px;
+  border: 1px #dcebf8 solid;
+}
+
+.number {
+  /* // Номер телефона */
+  margin-left: 145px;
+  margin-bottom: 8px;
+  color: #1a3555;
+  font-size: 14px;
+  font-family: Gilroy;
+  font-weight: 400;
+  line-height: 20.16px;
+  word-wrap: break-word;
+}
+
+.number-1 {
+  margin-left: 113px;
+  margin-bottom: 14px;
+  background: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: 340.88px;
+  height: 38.09px;
+  border-radius: 20px;
+  border: 1px #dcebf8 solid;
+}
+
+.password {
+  /* // Пароль */
+  margin-left: 145px;
+  margin-bottom: 8px;
+  color: #1a3555;
+  font-size: 14px;
+  font-family: Gilroy;
+  font-weight: 400;
+  line-height: 20.16px;
+  word-wrap: break-word;
+}
+
+.password-1 {
+  margin-left: 113px;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: 340.88px;
+  height: 38.09px;
+  border-radius: 20px;
+  border: 1px #dcebf8 solid;
+}
+
+.repeat__password {
+  /* // Подтвердите пароль */
+  margin-left: 145px;
+  margin-bottom: 8px;
+  color: #1a3555;
+  font-size: 14px;
+  font-family: Gilroy;
+  font-weight: 400;
+  line-height: 20.16px;
+  word-wrap: break-word;
+}
+
+.repet__password-1 {
+  margin-left: 113px;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: 340.88px;
+  height: 38.09px;
+  border-radius: 20px;
+  border: 1px #dcebf8 solid;
+}
+
+.check {
+  padding-top: 25px;
+  display: flex;
+}
+
+.checkbox {
+  padding-top: 20px;
+  margin-left: 170px;
+  width: 10px; 
+  height: 10px; 
+  background: white;
+   border: 1px #EFF6FB solid"
+}
+
+.check__text{
+  /* // Принимаю  */
+  margin-left: 10px;
+color: #1A3555;
+ font-size: 10px;
+ font-family: Gilroy;
+ font-weight: 400;
+ line-height: 14.40px;
+ word-wrap: break-word
+
+
+}
+
+.check__span{
+/* // условия пользования системы alsep */
+color: #1482E8;
+font-size: 10px;
+font-family: Gilroy;
+font-weight: 400;
+line-height: 14.40px;
+word-wrap: break-word
+}
+
+.btn{
+  margin-left: 113px;
+  margin-top: 25px;
+  width: 229px; 
+  height: 39px;
+   background: linear-gradient(94deg, #1482E8 0%, #28C6DC 100%); 
+   border-radius: 90px
+}
+
+.btn__2{
+   /* // Регистрация */
+color: white;
+font-size: 14px;
+font-family: Gilroy;
+font-weight: 400;
+line-height: 20.16px;
+word-wrap: break-word
+}
+
+.par1{
+  /* // Вам понадобятся */
+  padding-left: 115px;
+  padding-top: 50px;
+ color: #1A3555;
+ font-size: 24px;
+ font-family: Gilroy;
+ font-weight: 600;
+ line-height: 28.80px;
+ word-wrap: break-word
+}
+
+.par3{
+  /* // Шаг 1<br/>регистрация в системе:<br/> */
+  padding-left: 115px;
+  padding-top: 35px;
+color: #1A3555;
+ font-size: 14px;
+ font-family: Gilroy;
+ font-weight: 700;
+ line-height: 20.16px;
+ word-wrap: break-word
+}
+
+.par4{
+  /* // E-mailТелефонПарольПодтверждение*/
+  padding-left: 115px;
+color: #1A3555;
+font-size: 14px;
+font-family: Gilroy;
+font-weight: 400;
+line-height: 20.16px;
+word-wrap: break-word
+}
+
+.par5{
+  /* display: flex; */
+}
+
+.par6{
+  padding-top: 75px;
+}
+.par7{
+  /* // Шаг 2<br/>заполнение реквизитов компании:<br/> */
+  padding-top: 33px;
+  padding-left: 113px;
+  display: flex;
+color: #1A3555;
+font-size: 14px;
+font-family: Gilroy;
+font-weight: 700;
+line-height: 20.16px;
+word-wrap: break-word
+}
+
+.par8{
+  /* // БИН<br/>Название<br/>Юридический адрес<br/>Телефон<br/>Реквиизиты банковского счета<br/>Код */
+margin-top: 5px;
+padding-left: 115px;
+color: #1A3555;
+font-size: 14px;
+font-family: Gilroy;
+font-weight: 400;
+line-height: 20.16px;
+word-wrap: break-word
+}
+
+.par9{
+  display: flex;
+}
+
+.par10{
+  display: flex;
+  justify-content: center;
+}
