@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Контакты</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html" class="logo">
+          <img src="./images/Logo.svg" alt="logo" width="127" height="54"
+        /></a>
+
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__nav__link" href="#">Рус.</a>
+              <img
+                src="./images/arrow-bottom.svg"
+                alt="arrow icon"
+                width="10.8"
+                height="6"
+              />
+            </li>
+            <li class="header__item">
+              <a class="header__nav__link" href="#">Продукты</a>
+            </li>
+
+            <li class="header__item">
+              <a class="header__nav__link" href="#">Купить</a>
+            </li>
+
+            <li class="header__item">
+              <a class="header__nav__link" href="#">Партнерам</a>
+            </li>
+
+            <li class="header__item">
+              <a class="header__nav__link" href="#">Поддержка</a>
+            </li>
+
+            <li class="header__item">
+              <a class="header__nav__link" href="#">О нас</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__right">
+          <span
+            ><img src="./images/phone-icon.svg" alt="phone icon" />
+            <a class="header__tel" href="tel:77777777777">+7 777 777 77 77</a>
+            <img src="./images/arrow-bottom.svg" alt="arrow"
+          /></span>
+          <a class="header__login without-background-link" href="#">Войти</a>
+          <a
+            class="header__registration with-background-link"
+            href="./index.html"
+            >Регистрация</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- Intro -->
+    <main class="intro">
+      <div class="container">
+        <section class="intro__section">
+          <h1 class="intro__register">Регистрация</h1>
+          <form>
+            <!-- EMAIL -->
+            <div>
+              <label class="email" for="E-mail">E-mail</label>
+            </div>
+            <input class="e-email" id="E-mail" type="email" />
+            <!-- NUMBER PHONE -->
+            <div>
+              <label class="number" for="number">Номер телефона</label>
+            </div>
+            <input class="number-1" id="number" type="tel" />
+            <!-- PASSWORD -->
+            <div>
+              <label class="password" for="password">Пароль</label>
+            </div>
+            <input class="password-1" id="password" type="password" />
+            <!-- PASSWORD -->
+            <div>
+              <label class="repeat__password" for="repeat__password"
+                >Подтвердите пароль</label
+              >
+            </div>
+            <input
+              class="repet__password-1"
+              id="repeat__password"
+              type="password"
+            />
+            <div class="check">
+              <input class="checkbox" type="checkbox" />
+              <p class="check__text">
+                Принимаю
+                <span class="check__span"
+                  >условия пользования системы alsep</span
+                >
+              </p>
+            </div>
+
+            <button class="btn btn__2" type="button">Регистрация</button>
+          </form>
+        </section>
+
+        <section>
+          <div class="par9">
+            <div class="par5">
+              <h2 class="par1">Вам понадобятся</h2>
+              <p class="par3">
+                Шаг 1 <br />
+                регистрация в системе:
+              </p>
+              <p class="par4">
+                E-mail<br />Телефон<br />Пароль<br /><br />Подтверждение<br />
+              </p>
+            </div>
+
+            <div class="par6">
+              <p class="par7">
+                Шаг 2 <br />
+                заполнение реквизитов компании:
+              </p>
+              <p class="par8">
+                БИН<br />Название<br />Юридический адрес<br />Телефон<br />Реквиизиты
+                банковского счета<br />Код
+              </p>
+            </div>
+          </div>
+          <div class="par10">
+            <img src="./images/man-phone.png" alt="" />
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
